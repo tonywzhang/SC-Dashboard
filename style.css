@@ -1,0 +1,12 @@
+body {
+  background-color: #D0D0D0;
+}
+
+#seasonComp {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
