@@ -1,22 +1,22 @@
 # SC30 JavaScript Proposal
 
-Stephen Curry is an NBA Superstar, but is often criticized during the regular season for his "sub-standard" play. SC30 is a dashboard that is designed to visualize Steph's regular season contributions to the 2017-18 Golden State Warriors on their journey to win their 6th world championship.
+Stephen Curry is an NBA Superstar, but is often criticized during the regular season for his "sub-standard" play. SC30 is a dashboard that is designed to highlight Steph's regular season contributions to the 2017-18 Golden State Warriors on their journey to win their 6th world championship.
 
-I initially majored in Statistics in college, and I think being able to visualize data makes it much easier to understand. Interest in the NBA is growing every year, and being able to accumulate statistics and tell a story is a project that would be challenging, but entertaining as well.
+SC30 will use stats mostly pulled from [NBA.com](http://stats.nba.com) and will dynamically update stats with each game.
 
 # MVP Features
 
 - [ ] Charts are displayed correctly, and are easy to understand
-- [ ] Player contribution chart can be clicked to show Steph's stats compared to his teammates
+- [ ] Player contribution chart shows Steph's stats compared to his teammates
 - [ ] Player selected in contribution chart is shown in the adjacent chart with their relevant stats
-- [ ] User can click on different players to render different data
+- [ ] User can click on different players to render their season averages in adjacent chart.
 
 
 This project will include:
 
 - [ ] A production ReadMe
 
-The Player Contribution Chart mentioned above will look and have similar functionality with [this](http://bl.ocks.org/diethardsteiner/3287802).  
+The Player Contribution Chart and accompanying Bar Chart mentioned above will look and have similar functionality with [this](http://bl.ocks.org/diethardsteiner/3287802).  
 
 
 # Wireframes
@@ -53,7 +53,10 @@ This project will be implemented with the following technologies.
 
 <b>Day 4:</b> CSS charts to look nice.
 
-#Future Features
+# Future Features
 
 - [ ] Be able to render charts with data based on any chosen season of Curry's career.
+- [ ] All charts update dynamically with each game in the season.
+- [ ] Add playoff stat charts
 - [ ] Charts are comparable/moveable.
+- [ ] Make trendline table interactive, clicking on a certain game will bring up stats, video highlights from that respective game
