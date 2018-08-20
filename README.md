@@ -21,7 +21,7 @@ The Player Contribution Chart mentioned above will look and have similar functio
 
 This app will consist of a single screen with multiple graphs displaying his performance on and off the court, as well as nav links to my Github/LinkedIn.
 
-![SC30 Logo](/JavaScript/WireFrame1.png "Logo Title Text 1")
+![SC30 Logo](/WireFrame1.png "Logo Title Text 1")
 
 
 # Architecture and Technologies
