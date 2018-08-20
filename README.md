@@ -1,6 +1,6 @@
 # SC30 JavaScript Proposal
 
-### Stephen Curry is an NBA Superstar, but is often criticized during the regular season for his "sub-standard" play. SC30 is a dashboard that is designed to visualize Steph's regular season contribution to the 2017-18 Golden State Warriors on their journey to win their 6th world championship.
+### Stephen Curry is an NBA Superstar, but is often criticized during the regular season for his "sub-standard" play. SC30 is a dashboard that is designed to visualize Steph's regular season contributions to the 2017-18 Golden State Warriors on their journey to win their 6th world championship.
 
 # MVP Features
 
@@ -21,7 +21,7 @@ The Player Contribution Chart mentioned above will look and have similar functio
 
 This app will consist of a single screen with multiple graphs displaying his performance on and off the court, as well as nav links to my Github/LinkedIn.
 
-![720 Logo](/Users/shuai/Desktop/JavaScript/WireFrame1.png "Logo Title Text 1")
+![SC30 Logo](/JavaScript/WireFrame1.png "Logo Title Text 1")
 
 
 # Architecture and Technologies
