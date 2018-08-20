@@ -1,12 +1,48 @@
 body {
-  background-color: #D0D0D0;
+  background-color: #F5F5F5;
+  margin-left: 50px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-#seasonComp {
+a {
+  color: #007FFF;
+}
+
+.row{
+  display: flex;
+  text-align: center;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.left-container {
+  display: inline-block;
+  width: 350px;
+  height: 300px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.right-container {
+  display: inline-block;
+  width: 700px;
+  height: 300px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#seasonComp *{
   font: 10px sans-serif;
   background-color: steelblue;
   text-align: right;
   padding: 3px;
   margin: 1px;
   color: white;
+}
+
+#seasonComp *:hover{
+  background-color: brown;
 }
