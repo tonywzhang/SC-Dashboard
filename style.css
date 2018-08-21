@@ -9,6 +9,12 @@ a {
   color: #007FFF;
 }
 
+label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
 .row{
   display: flex;
   text-align: center;
@@ -34,14 +40,17 @@ a {
   border-radius: 3px;
 }
 
-label {
-  font-size: 16px;
-  font-weight: 700;
-}
 
 .seasonAvgs {
   padding: 20px 5px 20px 5px;
 }
+
+/* #seasonComp rect {
+  fill: #104E8B;
+}
+#seasonComp rect:hover {
+   fill: blue;
+} */
 
 /*
 #seasonComp *{
