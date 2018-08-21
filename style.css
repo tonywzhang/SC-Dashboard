@@ -12,28 +12,38 @@ a {
 .row{
   display: flex;
   text-align: center;
-  height: 300px;
+  height: 280px;
   margin-bottom: 20px;
 }
 
 .left-container {
   display: inline-block;
   width: 350px;
-  height: 300px;
+  height: 280px;
   margin-right: 10px;
-  border: 1px solid black;
+  border: 1px solid #DCDCDC;
   border-radius: 3px;
 }
 
 .right-container {
   display: inline-block;
   width: 700px;
-  height: 300px;
+  height: 280px;
   margin-left: 10px;
-  border: 1px solid black;
+  border: 1px solid #DCDCDC;
   border-radius: 3px;
 }
 
+label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.seasonAvgs {
+  padding: 20px 5px 20px 5px;
+}
+
+/*
 #seasonComp *{
   font: 10px sans-serif;
   background-color: steelblue;
@@ -45,4 +55,4 @@ a {
 
 #seasonComp *:hover{
   background-color: brown;
-}
+} */
