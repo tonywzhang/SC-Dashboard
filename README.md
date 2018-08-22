@@ -17,7 +17,7 @@ SC30 will use stats mostly pulled from [NBA.com](http://stats.nba.com) and will 
 
 This project will include:
 
-- [ ] A production ReadM
+- [ ] A production ReadMe
 
 The Player Contribution Chart and accompanying Bar Chart mentioned above will look and have similar functionality with [this](http://bl.ocks.org/diethardsteiner/3287802).  
 
