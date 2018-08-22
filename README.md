@@ -7,12 +7,12 @@ SC30 will use stats mostly pulled from [NBA.com](http://stats.nba.com) and will 
 # MVP Features
 
 - [ ] Charts are displayed correctly, and are easy to understand
-- [ ] Career Accomplishments are static, eventually update with trendline
+- [x] Career Accomplishments are static, eventually update with trendline
 - [ ] Line graph rendering Steph's points per game over the course of the season.
 - [ ] Player contribution chart shows Steph's stats compared to his teammates
 - [ ] Player selected in contribution chart is shown in the adjacent chart with their relevant stats
-- [ ] Net Worth & Social Media #s update regularly.
-- [ ] Bar Chart displaying Steph's most successful scoring seasons.
+- [x] Net Worth & Social Media #s update regularly.
+- [x] Bar Chart displaying Steph's most successful scoring seasons.
 
 
 This project will include:
@@ -63,3 +63,4 @@ This project will be implemented with the following technologies.
 - [ ] Add playoff stat charts
 - [ ] Charts are comparable/moveable.
 - [ ] Make trendline table interactive, clicking on a certain game will bring up stats, video highlights from that respective game
+- [ ] All charts are dynamic
