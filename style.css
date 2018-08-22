@@ -14,7 +14,6 @@ label {
   font-weight: 700;
 }
 
-
 .row{
   display: flex;
   text-align: center;
@@ -42,7 +41,11 @@ label {
 
 
 .seasonAvgs {
-  padding: 20px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
+}
+
+.careerAvgs {
+  padding: 0px 5px 0px 5px;
 }
 
 /* #seasonComp rect {
