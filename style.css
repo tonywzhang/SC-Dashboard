@@ -37,19 +37,6 @@ label {
   height: 400px;
 } */
 
-.yAxis1{
-  transform: rotate(-90deg);
-   transform-origin: right, top;
-   -ms-transform: rotate(-90deg);
-   -ms-transform-origin:right, top;
-   -webkit-transform: rotate(-90deg);
-   -webkit-transform-origin:right, top;
-   position: absolute;
-   left: 420px;
-   top: 250px;
-}
-
-
 .yAxis3{
   /* margin-bottom: 200px;
   transform: rotate(-90deg); */
@@ -60,7 +47,7 @@ label {
    -webkit-transform: rotate(-90deg);
    -webkit-transform-origin:right, top;
    position: absolute;
-   left: 420px;
+   left: 400px;
    bottom: -125px;
 }
 
