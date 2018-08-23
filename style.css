@@ -19,9 +19,27 @@ label {
   font-weight: 700;
 }
 
+.arc text {
+  font: 12px sans-serif;
+  text-anchor: middle;
+  font-weight: 700;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.arc2 text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc2 path {
+  stroke: #fff;
+}
+
 .row{
   display: grid;
-
   grid-template-columns: minmax(250px, 4fr) minmax(250px, 7fr);
   grid-column-gap: 5px;
   margin-bottom: 10px;
@@ -92,8 +110,8 @@ label {
   -ms-transform-origin:right, top;
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin:right, top;
-  top: 50%;
-  left: 20%;
+  top: 60%;
+  left: -45%;
 }
 
 #trendLine {
