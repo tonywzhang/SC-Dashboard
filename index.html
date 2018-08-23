@@ -7,6 +7,7 @@
   <title>SC30 Dashboard</title>
   <script src="https://d3js.org/d3.v5.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -24,105 +25,111 @@
   </p>
 
   <div class="row">
-    <div class="left-container">
-      <label>
-        Stephen Curry's Stats in 2017-18
-      </label>
+    <div class="left-container1">
 
-      <div class="seasonAvgs"> In 51 games, Stephen Curry averaged 26.4 points per game, 5.1 rebounds per game, and 6.1 assists per game in 2017-18.</div>
-
+      <div id="seasonAvgs"></div>
+      <br/>
       <label>
-        Career Averages
+        Steph Curry's Points Per Game
       </label>
       <br/>
+      <div id="average">
+      </div>
       <br/>
-      <div class="careerAvgs">Stephen Curry is averaging 23.1 points per game, 4.4 rebounds per game, and 6.8 assists per game in his career.</div>
-
-      <div id="trendStats">
-
-      </div>
-    </div>
-
-    <div class="right-container">
-        <label>
-          Stephen Curry's Scoring in 2017-18
-        </label>
-
-        <div id="trendLine">
-
-        </div>
-    </div>
-  </div>
-
-  <div class="row">
-
-    <div class="left-container">
-
       <label>
-        GSW Scoring Breakdown
+        Games Played
       </label>
-
-      <div id="pieChart">
-
+      <br/>
+      <div id="gameCount">
       </div>
-    </div>
-
-    <div class="right-container">
-
+      <br/>
       <label>
-        Individual Statistics
+        Most Recent Opponent
       </label>
+      <div id="opponent">
+      </div>
+    </div>
 
-      <div id="barChart">
+  <div class="right-container">
+    <label>
+      Stephen Curry's Scoring in 2017-18
+    </label>
 
+    <div id="trendLine">
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="left-container2">
+
+    <label>
+      GSW Scoring Breakdown
+    </label>
+
+    <div id="pieChart">
+      <svg width="250" height="250"></svg>
+    </div>
+  </div>
+
+  <div class="right-container">
+
+    <label>
+      Individual Statistics
+    </label>
+
+    <div id="barChart">
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="left-container3">
+    <div id="numbers">
+      <div class="netWorth">
+        <h3> Curry's Net Worth (in USD) </h3>
+        <div id="net-worth">
+        </div>
+      </div>
+      <div class="igFollowers">
+        <h3>Curry's Instagram Followers</h3>
+        <div id="ig-followers">
+        </div>
+      </div>
+      <div class="twitFollowers">
+        <h3>Curry's Twitter Followers</h3>
+        <div id="twit-followers">
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="left-container">
-      <div id="numbers">
-        <div class="netWorth">
-          <h3> Curry's Net Worth (in USD) </h3>
-          <div id="net-worth">
-          </div>
+  <div class="right-container">
+
+    <div class="scoringContainer">
+      <label>
+        Stephen Curry's Best Scoring Seasons
+      </label>
+      <div class="horizontalContainer">
+        <div class="yAxis3">
+          Points
         </div>
-        <div class="igFollowers">
-          <h3>Curry's Instagram Followers</h3>
-          <div id="ig-followers">
-          </div>
-        </div>
-        <div class="twitFollowers">
-          <h3>Curry's Twitter Followers</h3>
-          <div id="twit-followers">
-          </div>
+        <div id="seasonComp">
+
         </div>
       </div>
-    </div>
-
-    <div class="right-container">
-
-      <div class="scoringContainer">
-        <label>
-          Stephen Curry's Best Scoring Seasons
-        </label>
-        <div class="horizontalContainer">
-          <div class="yAxis3">
-            Points
-          </div>
-          <div id="seasonComp">
-
-          </div>
-        </div>
-        <div class="xAxisLabel">
-          Year
-        </div>
+      <div class="xAxisLabel">
+        Year
       </div>
     </div>
-
   </div>
 
-  <script src="./lib/bundle.js"></script>
+</div>
+
+<script src="./lib/bundle.js"></script>
 
 </body>
 </html>

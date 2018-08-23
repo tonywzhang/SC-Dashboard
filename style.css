@@ -1,8 +1,13 @@
 body {
   background-color: #F5F5F5;
-  margin-left: 50px;
+  margin-left: 150px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
   Helvetica, Arial, "Lucida Grande", sans-serif;
+  /* background-image: url("./champs.jpg_large"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* color: white; */
 }
 
 a {
@@ -14,59 +19,57 @@ label {
   font-weight: 700;
 }
 
-#seasonComp {
-  margin-top: -45px;
-  margin-left: 40px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-}
 .row{
-  display: flex;
-  text-align: center;
-  height: 300px;
-  margin-bottom: 20px;
+  display: grid;
+
+  grid-template-columns: minmax(250px, 4fr) minmax(250px, 7fr);
+  grid-column-gap: 5px;
+  margin-bottom: 10px;
+  grid-row-gap: 10px;
   overflow: hidden;
+  width: 1000px;
+  text-align: center;
 }
 
 .horizontalContainer{
-  display:flex;
   flex-direction: row;
 }
 
-/* .scoringContainer{
-  height: 400px;
-} */
-
-.yAxis3{
-  /* margin-bottom: 200px;
-  transform: rotate(-90deg); */
-  transform: rotate(-90deg);
-   transform-origin: right, top;
-   -ms-transform: rotate(-90deg);
-   -ms-transform-origin:right, top;
-   -webkit-transform: rotate(-90deg);
-   -webkit-transform-origin:right, top;
-   position: absolute;
-   left: 400px;
-   bottom: -125px;
-}
-
-.left-container {
-  display: inline-block;
-  width: 350px;
-  height: 280px;
+.left-container1 {
+  display: block;
   margin-right: 10px;
   border: 1px solid #DCDCDC;
   border-radius: 3px;
+  background-color: #0099e5;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container2 {
+  display: block;
+  margin-right: 10px;
+  border: 1px solid #DCDCDC;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.left-container3 {
+  display: block;
+  margin-right: 10px;
+  border: 1px solid #DCDCDC;
+  border-radius: 3px;
+  background-color: #0099e5;
+  color: white;
+  justify-content: center;
 }
 
 .right-container {
-  display: inline-block;
-  width: 700px;
-  height: 280px;
+  display: block;
   margin-left: 10px;
   border: 1px solid #DCDCDC;
   border-radius: 3px;
+  background-color: white;
 }
 
 
@@ -74,14 +77,23 @@ label {
   padding: 10px 5px 10px 5px;
 }
 
-.careerAvgs {
-  padding: 0px 5px 0px 5px;
-}
 
 .line {
   fill: none;
   stroke: steelblue;
   stroke-width: 2px;
+}
+
+.yAxis3{
+  position: relative;
+  transform: rotate(-90deg);
+  transform-origin: right, top;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin:right, top;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin:right, top;
+  top: 50%;
+  left: 20%;
 }
 
 #trendLine {
@@ -93,23 +105,9 @@ label {
 
 }
 
-/* #seasonComp rect {
-  fill: #104E8B;
+#seasonComp {
+  margin-top: -45px;
+  margin-left: 40px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
-#seasonComp rect:hover {
-   fill: blue;
-} */
-
-/*
-#seasonComp *{
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
-}
-
-#seasonComp *:hover{
-  background-color: brown;
-} */
