@@ -113,6 +113,13 @@ label {
   top: 60%;
   left: -45%;
 }
+.icons a:hover{
+  color: #2196F3;
+}
+
+text *{
+  z-index: 2;
+}
 
 #trendLine {
   overflow: scroll;
@@ -128,4 +135,8 @@ label {
   margin-left: 40px;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
+}
+
+#SC30header {
+  display: flex;
 }
