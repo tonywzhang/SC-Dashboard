@@ -1,66 +1,80 @@
-# SC30 JavaScript Proposal
+# Welcome to SC30 Dashboard!
 
-Stephen Curry is an NBA Superstar, but is often criticized during the regular season for his "sub-standard" play. SC30 is a dashboard that is designed to highlight Steph's regular season contributions to the 2017-18 Golden State Warriors on their journey to win their 6th world championship.
+SC30 is a single page web-app that renders stats regarding Stephen Curry's 2017-18 NBA Season. This site is a dashboard for users to see how Steph progressed statistically through the season and compare his season to previous seasons.
 
-SC30 will use stats mostly pulled from [NBA.com](http://stats.nba.com) and will dynamically update stats with each game.
+[SC30 Dashboard Demo!](https://tonywzhang.github.io/SC-Dashboard/)
 
-# MVP Features
+## Design
 
-- [ ] Charts are displayed correctly, and are easy to understand
-- [x] Career Accomplishments are static, eventually update with trendline
-- [ ] Line graph rendering Steph's points per game over the course of the season.
-- [ ] Player contribution chart shows Steph's stats compared to his teammates
-- [ ] Player selected in contribution chart is shown in the adjacent chart with their relevant stats
-- [x] Net Worth & Social Media #s update regularly.
-- [x] Bar Chart displaying Steph's most successful scoring seasons.
+The SC30 Dashboard was designed and built from scratch in 4 days. The proposal was prepared to implement MVPs to get the site functional. Majority of components are produced via the D3 JavaScript Library. Improvements will be added over time. More details about the proposal can be viewed [here]().
 
+## Features:
 
-This project will include:
+* `Curry's Point Per Game stat will be dynamically updated with each game he played during the 2017-18 season.`
+* `Curry's season averages for all relevant stat categories in a pie chart that will be rendered using JavaScript D3 Library.`
+* `Curry's Point Per Game contribution in relation to his teammates' totals will also be rendered using JavaScript D3 Library.`
+* `Curry's scoring totals will be rendered on line chart using JavaScript D3 Library.`
+* `Curry's social media following is shown dynamically updating over time.`
+* `Curry's best statistical scoring seasons are rendered in a bar graph using JavaScript D3 Library.`
 
-- [ ] A production ReadMe
+## Data
 
-The Player Contribution Chart and accompanying Bar Chart mentioned above will look and have similar functionality with [this](http://bl.ocks.org/diethardsteiner/3287802).  
+The SC30 Dashboard displays Curry's most important stats. Stats were mostly pulled from [Basketball Reference](https://www.basketball-reference.com/players/c/curryst01.html) and [NBA Stats](https://stats.nba.com/players/traditional/?sort=PTS&dir=-1&Season=2017-18&SeasonType=Regular%20Season&TeamID=1610612744). Other game log data was pulled from [Yahoo Sports](https://sports.yahoo.com/nba/players/4612/gamelog/).
 
+## D3 Library
 
-# Wireframes
+* `Pie Charts were rendered using D3 JavaScript library using tutorials from` [here](https://www.youtube.com/channel/UC18PYast-g9zjsavyv08oMg) `as a model.`
+* `Line Chart was rendered using D3 JavaScript library using`[this tutorial](https://bl.ocks.org/d3noob/402dd382a51a4f6eea487f9a35566de0) `as a model.`
+* `Bar Graph was rendered using D3 JavaScript library using tutorials from `[Udemy](https://www.udemy.com/masteringd3js/learn/v4/overview)`and` [this tutorial](https://bl.ocks.org/mbostock/3885304).
 
-This app will consist of a single screen with multiple graphs displaying his performance on and off the court, as well as nav links to my Github/LinkedIn.
+![720 Logo](/ss1.png "Logo Title Text 1")
+![720 Logo](/ss2.png "Logo Title Text 1")
 
-![SC30 Logo](/WireFrame1.png "Logo Title Text 1")
+## Dynamically Updated Stats
 
+* `Curry's stats dynamically update on a game-by-game basis and update his Points Per Game total, keeping track of the total number of games he has played, as well as the most recent opponent he faced.`
 
-# Architecture and Technologies
+* `CSS Grid was used to display data in an aesthetic manner.`
 
-This project will be implemented with the following technologies.
+```js
 
-* D3.js for visualization.
-* Vanilla JavaScript for data.
+export const updateAverage = () => {
+  const interval = setInterval(function() {
+    runningAverage = update(runningAverage, 'average');
+    document.getElementById('average').innerHTML = parseFloat(runningAverage).toFixed(1);
+    document.getElementById('gameCount').innerHTML = formatNum(game);
+    document.getElementById('opponent').innerHTML = gameData[game-1].opp;
+    if (game === 51){
+      clearInterval(interval);
+    }
+  }, 1000);
+}
 
-### File Structure
+```
 
-* docs
-* lib
-  * index.js
-  * chart_x.js
-* style.css
-* index.html
+`Curry's data is in order by game in the database, so I was able to iterate over them with a setInterval and update them on a set schedule.`
 
+## Project Design
 
-# Implementation Timeline
+`The SC30 Dashboard was designed with simplicity and aesthetic in mind. With a few four days to pull this project together, the priority was to quickly learn D3 and be able to display the data in a manner that would be easy to read. Keeping code functional and easy to manage was prioritized over creating a fully dynamic dashboard, keeping in mind the intention to add more features in the future.`
 
-<b>Day 1:</b> Setup all files properly, figure out how to successfully parse data(JSON/CSV) from both local and online URLs. Learn the basics of D3.js. Be able to render an object to index.html and be able to accomplish basic manipulation of data.
+## Technologies
 
-<b>Day 2:</b> Have two graphics displaying properly.
+### JavaScript
+  * `This project was created entirely on JavaScript.`
+  * `This project implements D3 JavaScript library to render raw numbers in an understandable manner.`
 
-<b>Day 3:</b> Have remaining graphics displaying properly.
+### Additional Technologies
+  * `npm(Node Package Manager)`
+  * `webpack`
 
-<b>Day 4:</b> CSS charts to look nice.
+## Future Additions
 
-# Future Features
+`In the future, I would like to add/improve:`
 
-- [ ] Be able to render charts with data based on any chosen season of Curry's career.
-- [ ] All charts update dynamically with each game in the season.
-- [ ] Add playoff stat charts
-- [ ] Charts are comparable/moveable.
-- [ ] Make trendline table interactive, clicking on a certain game will bring up stats, video highlights from that respective game
-- [ ] All charts are dynamic
+* `Dynamically updated pie chart with associated bar chart like` [this](http://bl.ocks.org/diethardsteiner/3287802).
+* `Dynamically updated line chart that will update at the same rate as the first grid, "Steph Curry's Points Per Game", to give the user a visual representation of Curry's ups and downs.`
+* `API related data pull for ALL NBA players`
+* `NBA Team Dashboards`
+* `Dynamically updated stat databases to automatically update D3 charts.`
+* `Better labels for all charts to allow for an even more intuitive user experience.`
