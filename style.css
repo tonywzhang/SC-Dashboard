@@ -128,6 +128,11 @@ label {
   fill: brown;
 }
 
+.netWorth {
+  text-decoration: none;
+  color: white;
+}
+
 text *{
   z-index: 2;
 }
