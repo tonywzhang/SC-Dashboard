@@ -1,12 +1,15 @@
 body {
   background-color: #F5F5F5;
-  margin-left: 150px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
   Helvetica, Arial, "Lucida Grande", sans-serif;
   /* background-image: url("./champs.jpg_large"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   /* color: white; */
 }
 

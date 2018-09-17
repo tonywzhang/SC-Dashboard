@@ -1,6 +1,6 @@
-stat,total
-Points,26.4
-Rebounds,4.4
-Assists,6.1
-TOs,3
-3PM,4.2
+stat,total,color
+Points,26.4,#BBDEFB
+Rebounds,4.4,#90CAF9
+Assists,6.1,#64B5F6
+TOs,3,#42A5F5
+3PM,4.2,#2196F3
